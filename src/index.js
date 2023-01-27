@@ -1,6 +1,7 @@
+//this file imports all my packages and renders the DOM with the Todo component (that comes from To-do.js)
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import Todo from './To-do';
 import reportWebVitals from './reportWebVitals';
 
