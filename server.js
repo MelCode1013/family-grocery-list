@@ -43,9 +43,9 @@ let createPost = () => {
     posts.innerHTML += `
     <div>
     <p>${data.text}</p>
-    <span class="options">
-    <i onClick="editPost(this)" class="fas fa-edit"></i>
-    <i onClick="deletePost(this)" class="fas fa-trash-alt"></i>
+    <span className="options">
+    <i onClick="editPost(this)" className="fas fa-edit"></i>
+    <i onClick="deletePost(this)" className="fas fa-trash-alt"></i>
     </span>
     </div>
   `
@@ -54,15 +54,10 @@ let createPost = () => {
 }
 
 let deletePost = (item) => {
-  item.parentElement.parentElement.remove();
+  item.parentElement.parentElement.remove()
 }
 
-let editPost = () => {
-  
+editPost()
 
-  console.log("testing")
-}
-
-console.log (create)
 
 //each list item that gets dynamically created needs a way for us to reference it.
